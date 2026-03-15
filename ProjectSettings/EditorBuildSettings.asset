@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ModeSelect.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 78ca359b632b09f4ab27abf1bd7dc2c3
+  - enabled: 1
+    path: Assets/Scenes/ZenSelect.unity
+    guid: c4e24f2f00174264d9bed4f15abc413b
+  - enabled: 1
+    path: Assets/Scenes/FlowSelect.unity
+    guid: 2a49e267d65731c479f423a6324291e7
+  - enabled: 1
+    path: Assets/Scenes/Flow1.unity
+    guid: 882703e57ad68044593403ffad8a05d4
+  - enabled: 1
+    path: Assets/Scenes/Flow2.unity
+    guid: 47b0c01e1cac4b34aafe77046c078161
+  - enabled: 1
+    path: Assets/Scenes/Flow3.unity
+    guid: a14d4bc847a0d0a41be501222e6ff7ae
+  - enabled: 1
+    path: Assets/Scenes/Flow4.unity
+    guid: 3504dfa20a4025e41849f638af421d3a
+  - enabled: 1
+    path: Assets/Scenes/Flow5.unity
+    guid: 7b1f2f895a17c1c4586fc83751933c31
+  - enabled: 1
+    path: Assets/Scenes/Flow6.unity
+    guid: 13cff4d4b406fd941bfe13f899016d92
+  - enabled: 1
+    path: Assets/Scenes/ZenGame.unity
+    guid: 01e41d24e5c09fe4ea2c22739ff76e77
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop1.unity
+    guid: 44393b28be4748944803350c953663e7
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop2.unity
+    guid: 7417538412c4fb94d86ea02e157e2ede
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop3.unity
+    guid: cac614ccb8a02264e818c2971f9a694a
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop4.unity
+    guid: 7c37affe86e4fdc4394073931d2bc3cf
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop5.unity
+    guid: 3b42a7ce5a7130e4d91cb74f441bf6f5
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop6.unity
+    guid: d7286152ed038324aa1bad83859858b3
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop7.unity
+    guid: f9bc2fc0cb61df142a92c1ee048e3bc8
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop8.unity
+    guid: f109b6959eef64846aa5f7e55cdbc027
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop9.unity
+    guid: 52ecc6416408d6e4794bf158e1f3bc1a
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop10.unity
+    guid: f0bce5706a0826640a1ff32e50ccb1d0
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop11.unity
+    guid: 812f4b8d30d32c64f8ba63a59211a418
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop12.unity
+    guid: 821839efd00c9c14f87e97df2ec31d19
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop13.unity
+    guid: 54a9bf045c6eaad41b4a8501a9c05ce8
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop14.unity
+    guid: fb70d4cc708253b439ec8e93a283ddfc
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop15.unity
+    guid: f289de43351fb3a4fa26dba045bbe117
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop16.unity
+    guid: 9357170b01bde3746afe0a4338554ce1
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop17.unity
+    guid: cae133c8c5f4f9440bc92b53dfb9b878
+  - enabled: 1
+    path: Assets/Scenes/Drag&Drop18.unity
+    guid: 23bc801794a5eee4b92c5cf2c1f7d2de
+  - enabled: 1
+    path: Assets/Scenes/Drag&DropMenu.unity
+    guid: fbf1bb704a3304c4bb08be18e4004dca
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
