@@ -10,7 +10,7 @@ public class ModeMenu : MonoBehaviour
     public TextMeshProUGUI descriptionText;
 
     private bool isSlovak = true;
-    private int currentMode = 0; // 0=Zen, 1=Flow, 2=DD
+    private int currentMode = 0; 
 
     public void Zen() => SceneManager.LoadScene("ZenSelect");
     public void Flow() => SceneManager.LoadScene("FlowSelect");

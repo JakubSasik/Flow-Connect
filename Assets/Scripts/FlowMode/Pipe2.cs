@@ -18,7 +18,7 @@ public class Pipe2 : MonoBehaviour
 
     void Start()
     {
-        InputLocked = false; // reset pri každom načítaní scény
+        InputLocked = false; 
         sr = GetComponent<SpriteRenderer>();
         int rand = Random.Range(0, rotations.Length);
         transform.rotation = Quaternion.Euler(0, 0, rotations[rand]);

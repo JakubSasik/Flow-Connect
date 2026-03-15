@@ -13,7 +13,6 @@ public class DDMode : MonoBehaviour
         if (infoPanel)      infoPanel.SetActive(false);
     }
 
-    // ─── CREEK MODE ──────────────────────────────────────────────
     public void LoadCreek1() => SceneManager.LoadScene("Drag&Drop1");
     public void LoadCreek2() => SceneManager.LoadScene("Drag&Drop2");
     public void LoadCreek3() => SceneManager.LoadScene("Drag&Drop3");
@@ -24,7 +23,6 @@ public class DDMode : MonoBehaviour
     public void LoadCreek8() => SceneManager.LoadScene("Drag&Drop8");
     public void LoadCreek9() => SceneManager.LoadScene("Drag&Drop9");
 
-    // ─── RIVER MODE ──────────────────────────────────────────────
     public void LoadRiver1() => SceneManager.LoadScene("Drag&Drop10");
     public void LoadRiver2() => SceneManager.LoadScene("Drag&Drop11");
     public void LoadRiver3() => SceneManager.LoadScene("Drag&Drop12");
@@ -35,7 +33,6 @@ public class DDMode : MonoBehaviour
     public void LoadRiver8() => SceneManager.LoadScene("Drag&Drop17");
     public void LoadRiver9() => SceneManager.LoadScene("Drag&Drop18");
 
-    // ─── HIGH SCORE ──────────────────────────────────────────────
     public void ShowHighScore()
     {
         if (highScorePanel) highScorePanel.SetActive(true);
@@ -47,14 +44,12 @@ public class DDMode : MonoBehaviour
         if (highScorePanel) highScorePanel.SetActive(false);
     }
 
-    // ─── INFO ────────────────────────────────────────────────────
     public void ShowInfo()
     {
         if (infoPanel)      infoPanel.SetActive(true);
         if (highScorePanel) highScorePanel.SetActive(false);
     }
 
-    // ─── BACK TO MAIN MENU ───────────────────────────────────────
     public void BackToMenu()
     {
         SceneManager.LoadScene("ModeSelect");

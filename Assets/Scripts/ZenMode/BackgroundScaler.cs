@@ -8,15 +8,15 @@ public class BackgroundScaler : MonoBehaviour
 
         switch (d)
         {
-            case 0: // Easy
+            case 0: 
                 transform.localScale = new Vector3(2.4f, 1f, 1f);
                 break;
 
-            case 1: // Normal
+            case 1: 
                 transform.localScale = new Vector3(2.8f, 1.1f, 1f);
                 break;
 
-            case 2: // Hard
+            case 2: 
                 transform.localScale = new Vector3(3.5f, 1.4f, 1f);
                 break;
         }

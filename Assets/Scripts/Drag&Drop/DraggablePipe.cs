@@ -43,11 +43,9 @@ public class DraggablePipe : MonoBehaviour
 
     void Update()
     {
-        // zablokuj input ak WinChecker hovorí že sme vyhrali
         WinChecker checker = FindObjectOfType<WinChecker>();
         if (checker != null && checker.InputLocked) return;
 
-        // ─── ĽAVÉ TLAČIDLO: začni drag ───────────────────────────
         if (Input.GetMouseButtonDown(0) && IsMouseOver() && !isFixed && !IsDragging)
         {
             if (grid == null) return;
@@ -62,13 +60,13 @@ public class DraggablePipe : MonoBehaviour
             if (sr) sr.sortingOrder = 10;
         }
 
-        // ─── ĽAVÉ TLAČIDLO: ťahaj ────────────────────────────────
+       
         if (dragging && Input.GetMouseButton(0))
         {
             transform.position = MouseWorld() + dragOffset;
         }
 
-        // ─── ĽAVÉ TLAČIDLO: pusti ────────────────────────────────
+      
         if (dragging && Input.GetMouseButtonUp(0))
         {
             dragging   = false;
@@ -89,45 +87,45 @@ public class DraggablePipe : MonoBehaviour
 
             if (targetPipe != null && targetPipe != this)
             {
-                // ak je cieľová pipe fixed (start/end) → vráť sa späť
+                
                 if (targetPipe.isFixed)
                 {
                     transform.position = originPos;
                     return;
                 }
 
-                // SWAP
+                
                 targetPipe.transform.position = originPos;
                 transform.position = grid.GetCellWorld(targetCell.x, targetCell.y);
                 if (wc) wc.CheckWin();
             }
             else if (targetPipe == null)
             {
-                // prázdna bunka
+                
                 transform.position = grid.GetCellWorld(targetCell.x, targetCell.y);
                 if (wc) wc.CheckWin();
             }
             else
             {
-                // tá istá bunka – vráť sa
+                
                 transform.position = originPos;
             }
         }
 
-        // ─── PRAVÉ TLAČIDLO: rotácia ─────────────────────────────
+        
         if (Input.GetMouseButtonDown(1) && IsMouseOver() && !isFixed && !IsDragging)
         {
             Tile2 tile2 = GetComponent<Tile2>();
             if (tile2 != null)
             {
-                tile2.Rotate90();  // Tile2 si rieši rotáciu aj connections sama
+                tile2.Rotate90();  
             }
             else
             {
                 transform.Rotate(0, 0, 90f);
             }
 
-            // skontroluj výhru aj po rotácii
+            
             WinChecker wc = FindObjectOfType<WinChecker>();
             if (wc) wc.CheckWin();
         }

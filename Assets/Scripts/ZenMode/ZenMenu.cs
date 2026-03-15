@@ -30,7 +30,7 @@ public class ZenMenu : MonoBehaviour
         SceneManager.LoadScene("ModeSelect");
     }
 
-    // INFO PANEL
+
     public void OpenInfo()
     {
         infoPanel.SetActive(true);
@@ -41,7 +41,7 @@ public class ZenMenu : MonoBehaviour
         infoPanel.SetActive(false);
     }
 
-    // HIGHSCORE PANEL
+    
     public void OpenHighScore()
     {
         highScorePanel.SetActive(true);

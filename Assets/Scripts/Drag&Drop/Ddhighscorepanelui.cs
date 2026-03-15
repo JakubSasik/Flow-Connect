@@ -15,7 +15,7 @@ public class DDHighScorePanelUI : MonoBehaviour
     public TextMeshProUGUI level8Text;
     public TextMeshProUGUI level9Text;
 
-    int modeOffset = 1; // 1 = Creek, 10 = River
+    int modeOffset = 1; 
 
     void OnEnable()
     {
@@ -54,8 +54,8 @@ public class DDHighScorePanelUI : MonoBehaviour
         var times = DDHighScoreStore.LoadTimes(level);
 
         int displayNum;
-        if (level <= 9) displayNum = level;       // Creek 1-9
-        else displayNum = level - 9;              // River 10-18 -> zobraz ako 1-9
+        if (level <= 9) displayNum = level;       
+        else displayNum = level - 9;              
 
         var sb = new StringBuilder();
         sb.AppendLine($"── Level {displayNum} ──");

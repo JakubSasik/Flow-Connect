@@ -11,17 +11,17 @@ public class GameFlow : MonoBehaviour
     public string zenGameSceneName = "ZenGame";
     public string menuSceneName = "ZenSelect";
 
-    int Difficulty => PlayerPrefs.GetInt("difficulty", 0); // 0 easy, 1 normal, 2 hard
+    int Difficulty => PlayerPrefs.GetInt("difficulty", 0); 
 
     public void RefreshWinUI()
     {
         int d = Difficulty;
 
         if (prevButton != null)
-            prevButton.SetActive(d > 0);   // Normal + Hard
+            prevButton.SetActive(d > 0);  
 
         if (nextButton != null)
-            nextButton.SetActive(d < 2);   // Easy + Normal
+            nextButton.SetActive(d < 2);   
     }
 
     public void Replay()

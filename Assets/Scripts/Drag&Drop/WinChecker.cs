@@ -218,7 +218,7 @@ public class WinChecker : MonoBehaviour
 
     IEnumerator FloodAndWin(Dictionary<Vector2Int, Tile2> tileMap)
     {
-        // spusti zvuk vody
+        
         if (audioSource != null && waterClip != null)
         {
             audioSource.clip = waterClip;
@@ -367,7 +367,7 @@ public class WinChecker : MonoBehaviour
             yield return StartCoroutine(AnimatePaths(tileMap, allPaths));
         }
 
-        // zastav zvuk
+        
         if (audioSource != null)
             audioSource.Stop();
 

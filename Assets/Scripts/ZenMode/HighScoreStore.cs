@@ -10,7 +10,7 @@ public static class HighScoreStore
     [Serializable]
     private class IntListWrapper { public List<int> values = new(); }
 
-    // ---------- TIME (float) ----------
+    
     public static List<float> LoadTimes(int difficulty)
     {
         string key = $"topTimes_{difficulty}";
@@ -37,12 +37,12 @@ public static class HighScoreStore
     {
         var times = LoadTimes(difficulty);
         times.Add(newTime);
-        times.Sort();                 // najmenší čas = najlepší
+        times.Sort();                 
         if (times.Count > 10) times.RemoveRange(10, times.Count - 10);
         SaveTimes(difficulty, times);
     }
 
-    // ---------- CLICKS (int) ----------
+    
     public static List<int> LoadClicks(int difficulty)
     {
         string key = $"topClicks_{difficulty}";
@@ -69,12 +69,12 @@ public static class HighScoreStore
     {
         var clicks = LoadClicks(difficulty);
         clicks.Add(newClicks);
-        clicks.Sort();                // najmenej klikov = najlepší
+        clicks.Sort();               
         if (clicks.Count > 10) clicks.RemoveRange(10, clicks.Count - 10);
         SaveClicks(difficulty, clicks);
     }
 
-    // ---------- RESET ----------
+    
     public static void ResetAll()
     {
         for (int d = 0; d < 3; d++)

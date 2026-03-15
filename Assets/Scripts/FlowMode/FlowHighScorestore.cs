@@ -21,7 +21,7 @@ public static class FlowHighScoreStore
 
         list.Add(new ScoreEntry { timeLeft = timeLeft, energy = energy });
 
-        // zoradi podľa zostatkového času (viac = lepšie)
+        
         list.Sort((a, b) => b.timeLeft.CompareTo(a.timeLeft));
         if (list.Count > 10) list.RemoveRange(10, list.Count - 10);
 

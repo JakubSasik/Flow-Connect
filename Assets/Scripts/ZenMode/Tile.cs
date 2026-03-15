@@ -20,7 +20,7 @@ public class Tile : MonoBehaviour
     public Sprite crossSprite;
     public Sprite startEndSprite;
 
-    private bool isFixed = false;        // true = Start/End, nedá sa otočiť vôbec
+    private bool isFixed = false;        
     private bool isRestricted = false;
     private int rotA, rotB;
 
@@ -47,18 +47,18 @@ public class Tile : MonoBehaviour
 
     void Update()
     {
-        // HARD BLOCK: ak sa dotkneš pravého tlačidla, tento frame nerobíme nič
+        
         if (Input.GetMouseButtonDown(1) || Input.GetMouseButton(1))
             return;
 
-        // Povolené je IBA ľavé tlačidlo
+        
         if (!Input.GetMouseButtonDown(0))
             return;
 
-        // musíš mať Collider2D na tile (BoxCollider2D napr.)
+        
         if (col == null) return;
 
-        // klik musí byť priamo na tento tile
+      
         var cam = Camera.main;
         if (cam == null) return;
 
@@ -91,7 +91,7 @@ public class Tile : MonoBehaviour
 
     public void SetRestrictedRotation(int angle1, int angle2)
     {
-        // ak sú oba uhly rovnaké → úplne zablokuj
+        
         if (NormalizeAngle(angle1) == NormalizeAngle(angle2))
         {
             isFixed = true;

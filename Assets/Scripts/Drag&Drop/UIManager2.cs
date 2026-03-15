@@ -23,13 +23,13 @@ public class UIManager2 : MonoBehaviour
 
         int level = GetCurrentLevel();
 
-        // Next: skryť na leveli 9 (Creek koniec) a 18 (River koniec)
+       
         if (nextLevelButton) nextLevelButton.SetActive(level != 9 && level < 18);
-        // Prev: skryť na leveli 1
+       
         if (prevLevelButton) prevLevelButton.SetActive(level > 1 && level != 10);
-        // River Mode button: zobraziť len na leveli 9
+      
         if (riverModeButton) riverModeButton.SetActive(level == 9);
-        // Creek Mode button: zobraziť len na leveli 10
+       
         if (creekModeButton) creekModeButton.SetActive(level == 10);
     }
 

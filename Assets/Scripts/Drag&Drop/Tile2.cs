@@ -107,7 +107,7 @@ public class Tile2 : MonoBehaviour
 
     Sprite GetSprite(PipeType type, PipeColor color)
     {
-        // Cross existuje len v modrej
+        
         if (type == PipeType.Cross)
             color = PipeColor.Blue;
 

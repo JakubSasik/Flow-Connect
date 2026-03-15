@@ -233,7 +233,7 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(5, 6, PipeType.Straight, PipeColor.Blue, 90));
                 break;
 
-            case 6: // Grid 7x5, Blue + Red
+            case 6: 
                 shuffleSwaps = 40;
                 if (wc)
                 {
@@ -242,7 +242,7 @@ public class LevelManagerU2 : MonoBehaviour
                     wc.startCell = new Vector2Int(1, 4);
                     wc.endCells = new List<Vector2Int> { new Vector2Int(5, 2), new Vector2Int(4, 2) };
                 }
-                // BLUE
+              
                 pipes.Add(P(1, 4, PipeType.StartEnd, PipeColor.Blue, 180, true));
                 pipes.Add(P(5, 2, PipeType.StartEnd, PipeColor.Blue, 180, true));
                 pipes.Add(P(1, 3, PipeType.Curve, PipeColor.Blue, 0));
@@ -256,7 +256,7 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(5, 1, PipeType.Curve, PipeColor.Blue, 0));
                 pipes.Add(P(2, 1, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(0, 0, PipeType.Curve, PipeColor.Blue, 0));
-                // RED
+                
                 pipes.Add(P(0, 4, PipeType.StartEnd, PipeColor.Red, 180, true));
                 pipes.Add(P(4, 2, PipeType.StartEnd, PipeColor.Red, 180, true));
                 pipes.Add(P(0, 3, PipeType.Straight, PipeColor.Red, 90));
@@ -271,14 +271,14 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(0, 1, PipeType.Straight, PipeColor.Red, 0));
                 break;
 
-            case 7: // Grid 8x6, Blue + Red, TCross
+            case 7: 
                 shuffleSwaps = 45;
                 if (wc)
                 {
                     wc.requireAllPipes = false;
                     wc.ignoreColor = false;
                 }
-                // BLUE
+                
                 pipes.Add(P(1, 0, PipeType.StartEnd, PipeColor.Blue, 270, true));
                 pipes.Add(P(7, 5, PipeType.StartEnd, PipeColor.Blue, 90, true));
                 pipes.Add(P(7, 1, PipeType.StartEnd, PipeColor.Blue, 90, true));
@@ -294,12 +294,12 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(6, 5, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(5, 1, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(6, 1, PipeType.Straight, PipeColor.Blue, 0));
-                // Blue extra
+                
                 pipes.Add(P(0, 0, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(7, 3, PipeType.Curve, PipeColor.Blue, 0));
                 pipes.Add(P(3, 2, PipeType.Curve, PipeColor.Blue, 0));
                 pipes.Add(P(7, 4, PipeType.Curve, PipeColor.Blue, 0));
-                // RED
+                
                 pipes.Add(P(0, 1, PipeType.StartEnd, PipeColor.Red, 270, true));
                 pipes.Add(P(1, 5, PipeType.StartEnd, PipeColor.Red, 180, true));
                 pipes.Add(P(3, 4, PipeType.StartEnd, PipeColor.Red, 90, true));
@@ -309,20 +309,19 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(1, 4, PipeType.Straight, PipeColor.Red, 90));
                 pipes.Add(P(2, 3, PipeType.Curve, PipeColor.Red, 90));
                 pipes.Add(P(2, 4, PipeType.Curve, PipeColor.Red, 270));
-                // Red extra
+      
                 pipes.Add(P(6, 3, PipeType.Straight, PipeColor.Red, 0));
                 pipes.Add(P(0, 4, PipeType.Curve, PipeColor.Red, 0));
                 break;
 
-            case 8: // Grid 9x7, Blue + Red + Green
+            case 8: 
                 shuffleSwaps = 50;
                 if (wc)
                 {
                     wc.requireAllPipes = false;
                     wc.ignoreColor = false;
                 }
-
-                // BLUE
+         
                 pipes.Add(P(0, 3, PipeType.StartEnd, PipeColor.Blue, 270, true));
                 pipes.Add(P(1, 3, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(2, 3, PipeType.TCross, PipeColor.Blue, 270));
@@ -335,11 +334,11 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(4, 1, PipeType.Curve, PipeColor.Blue, 180));
                 pipes.Add(P(4, 0, PipeType.StartEnd, PipeColor.Blue, 0, true));
 
-                // BLUE extra
+            
                 pipes.Add(P(0, 0, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(1, 0, PipeType.Curve, PipeColor.Blue, 90));
 
-                // RED
+            
                 pipes.Add(P(7, 0, PipeType.StartEnd, PipeColor.Red, 0, true));
                 pipes.Add(P(7, 1, PipeType.Straight, PipeColor.Red, 90));
                 pipes.Add(P(7, 2, PipeType.Curve, PipeColor.Red, 180));
@@ -352,11 +351,11 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(3, 4, PipeType.Curve, PipeColor.Red, 270));
                 pipes.Add(P(4, 4, PipeType.StartEnd, PipeColor.Red, 90, true));
 
-                // RED extra
+                
                 pipes.Add(P(6, 0, PipeType.Straight, PipeColor.Red, 0));
                 pipes.Add(P(6, 1, PipeType.Curve, PipeColor.Red, 180));
 
-                // GREEN
+             
                 pipes.Add(P(8, 0, PipeType.StartEnd, PipeColor.Green, 0, true));
                 pipes.Add(P(8, 1, PipeType.Straight, PipeColor.Green, 90));
                 pipes.Add(P(8, 2, PipeType.Straight, PipeColor.Green, 90));
@@ -372,12 +371,12 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(5, 4, PipeType.Straight, PipeColor.Green, 90));
                 pipes.Add(P(5, 3, PipeType.StartEnd, PipeColor.Green, 0, true));
 
-                // GREEN extra
+                
                 pipes.Add(P(7, 4, PipeType.Straight, PipeColor.Green, 90));
                 pipes.Add(P(7, 6, PipeType.Curve, PipeColor.Green, 270));
                 break;
 
-            case 9: // Grid 10x8, Blue + Red + Green + Yellow
+            case 9: 
                 shuffleSwaps = 55;
                 if (wc)
                 {
@@ -385,7 +384,7 @@ public class LevelManagerU2 : MonoBehaviour
                     wc.ignoreColor = false;
                 }
 
-                // BLUE
+              
                 pipes.Add(P(2, 2, PipeType.StartEnd, PipeColor.Blue, 270, true));
                 pipes.Add(P(3, 2, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(4, 2, PipeType.Straight, PipeColor.Blue, 0));
@@ -399,12 +398,12 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(7, 5, PipeType.Straight, PipeColor.Blue, 90));
                 pipes.Add(P(7, 6, PipeType.StartEnd, PipeColor.Blue, 180, true));
 
-                // BLUE extra
+                
                 pipes.Add(P(3, 3, PipeType.Straight, PipeColor.Blue, 0));
                 pipes.Add(P(4, 3, PipeType.Curve, PipeColor.Blue, 90));
                 pipes.Add(P(2, 4, PipeType.Straight, PipeColor.Blue, 0));
 
-                // RED
+                
                 pipes.Add(P(7, 1, PipeType.StartEnd, PipeColor.Red, 90, true));
                 pipes.Add(P(6, 1, PipeType.Straight, PipeColor.Red, 0));
                 pipes.Add(P(5, 1, PipeType.Straight, PipeColor.Red, 0));
@@ -427,11 +426,11 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(5, 6, PipeType.Curve, PipeColor.Red, 270));
                 pipes.Add(P(6, 6, PipeType.StartEnd, PipeColor.Red, 90, true));
 
-                // RED extra
+                
                 pipes.Add(P(3, 4, PipeType.Straight, PipeColor.Red, 0));
                 pipes.Add(P(4, 4, PipeType.Curve, PipeColor.Red, 180));
 
-                // GREEN
+               
                 pipes.Add(P(1, 0, PipeType.StartEnd, PipeColor.Green, 270, true));
                 pipes.Add(P(2, 0, PipeType.Straight, PipeColor.Green, 0));
                 pipes.Add(P(3, 0, PipeType.Straight, PipeColor.Green, 0));
@@ -452,11 +451,11 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(9, 5, PipeType.Straight, PipeColor.Green, 90));
                 pipes.Add(P(9, 6, PipeType.StartEnd, PipeColor.Green, 180, true));
 
-                // GREEN extra
+                
                 pipes.Add(P(6, 4, PipeType.Straight, PipeColor.Green, 0));
                 pipes.Add(P(8, 6, PipeType.Curve, PipeColor.Green, 270));
 
-                // YELLOW
+                
                 pipes.Add(P(0, 0, PipeType.StartEnd, PipeColor.Yellow, 0, true));
                 pipes.Add(P(0, 1, PipeType.Straight, PipeColor.Yellow, 90));
                 pipes.Add(P(0, 2, PipeType.Straight, PipeColor.Yellow, 90));
@@ -478,7 +477,7 @@ public class LevelManagerU2 : MonoBehaviour
                 pipes.Add(P(8, 7, PipeType.Straight, PipeColor.Yellow, 0));
                 pipes.Add(P(9, 7, PipeType.StartEnd, PipeColor.Yellow, 90, true));
 
-                // YELLOW extra
+                
                 pipes.Add(P(2, 6, PipeType.Straight, PipeColor.Yellow, 0));
                 pipes.Add(P(3, 6, PipeType.Curve, PipeColor.Yellow, 180));
                 break;

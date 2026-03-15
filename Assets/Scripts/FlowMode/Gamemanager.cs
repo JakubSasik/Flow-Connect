@@ -44,13 +44,13 @@ public class GameManager : MonoBehaviour
         if (prevLevelButton) prevLevelButton.SetActive(level > 1);
     }
 
-    // ─── WIN ─────────────────────────────────────────────────────
+
     public void OnWin()
     {
         if (gameOver) return;
         gameOver = true;
 
-        // zastav čas hned pri výhre (pred zaplavením)
+       
         FindObjectOfType<TimerManager>()?.Stop();
         FindObjectOfType<EnergyManager>()?.SetLocked(true);
 
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         if (winPanel) winPanel.SetActive(true);
     }
 
-    // ─── LOSE – čas vypršal ──────────────────────────────────────
+    
     public void OnTimeOut()
     {
         if (gameOver) return;
@@ -75,12 +75,12 @@ public class GameManager : MonoBehaviour
 
         FindObjectOfType<EnergyManager>()?.SetLocked(true);
 
-        if (loseReasonText) loseReasonText.text = "Čas vypršal!";
+        if (loseReasonText) loseReasonText.text = "Prehral si!";
         if (hud) hud.SetActive(false);
         if (losePanel) losePanel.SetActive(true);
     }
 
-    // ─── LOSE – energia minula ───────────────────────────────────
+    
     public void OnEnergyOut()
     {
         if (gameOver) return;
@@ -88,12 +88,12 @@ public class GameManager : MonoBehaviour
 
         FindObjectOfType<TimerManager>()?.Stop();
 
-        if (loseReasonText) loseReasonText.text = "Energia sa minula!";
+        if (loseReasonText) loseReasonText.text = "Prehral si!";
         if (hud) hud.SetActive(false);
         if (losePanel) losePanel.SetActive(true);
     }
 
-    // ─── BROKEN PIPE ALERT ───────────────────────────────────────
+    
     public void ShowBrokenPipeMessage()
     {
         if (brokenPipePanel) brokenPipePanel.SetActive(true);
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
         if (brokenPipePanel) brokenPipePanel.SetActive(false);
     }
 
-    // ─── PAUSE ───────────────────────────────────────────────────
+    
     public void TogglePause()
     {
         if (gameOver) return;
@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    // ─── BUTTONS ─────────────────────────────────────────────────
+  
     public void Retry()
     {
         Time.timeScale = 1f;
@@ -157,7 +157,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("FlowSelect");
     }
 
-    // ─── HELPER ──────────────────────────────────────────────────
+    
     int GetCurrentLevel()
     {
         string num = SceneManager.GetActiveScene().name.Replace("Flow", "");

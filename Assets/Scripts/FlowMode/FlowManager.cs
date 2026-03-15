@@ -44,7 +44,7 @@ public class FlowManager : MonoBehaviour
         FindObjectOfType<TimerManager>()?.Stop();
         FindObjectOfType<EnergyManager>()?.SetLocked(true);
 
-        // spusti zvuk vody
+        
         if (audioSource != null && waterClip != null)
         {
             audioSource.clip = waterClip;
@@ -59,7 +59,7 @@ public class FlowManager : MonoBehaviour
             yield return new WaitForSeconds(waterStepDelay);
         }
 
-        // zastav zvuk
+       
         if (audioSource != null)
             audioSource.Stop();
 
