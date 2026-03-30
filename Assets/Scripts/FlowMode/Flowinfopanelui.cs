@@ -7,6 +7,20 @@ public class FlowInfoPanelUI : MonoBehaviour
     public GameObject infoPanel;
     public TextMeshProUGUI descriptionText;
 
+    void Start()
+    {
+    if (PlayerPrefs.GetInt("FlowInfoShown", 0) == 0)
+    {
+        infoPanel.SetActive(true);
+        PlayerPrefs.SetInt("FlowInfoShown", 1);
+    }
+    else
+    {
+        infoPanel.SetActive(false);
+    }
+
+    SetSlovak();
+    }
     void OnEnable() => SetSlovak();
 
     public void Close() => infoPanel.SetActive(false);

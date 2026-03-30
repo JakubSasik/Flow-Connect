@@ -8,6 +8,21 @@ public class InfoPanelUI : MonoBehaviour
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descriptionText;
 
+    void Start()
+    {
+    if (PlayerPrefs.GetInt("ZenInfoShown", 0) == 0)
+    {
+        infoPanel.SetActive(true);
+        PlayerPrefs.SetInt("ZenInfoShown", 1);
+    }
+    else
+    {
+        infoPanel.SetActive(false);
+    }
+
+    SetSlovak();
+    }
+
     void OnEnable() => SetSlovak();
 
     public void Close() => infoPanel.SetActive(false);

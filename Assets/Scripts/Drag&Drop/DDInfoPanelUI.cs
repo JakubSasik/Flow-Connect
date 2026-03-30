@@ -8,6 +8,21 @@ public class DDInfoPanelUI : MonoBehaviour
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descriptionText;
 
+    void Start()
+    {
+    if (PlayerPrefs.GetInt("DDInfoShown", 0) == 0)
+    {
+        infoPanel.SetActive(true);
+        PlayerPrefs.SetInt("DDInfoShown", 1);
+    }
+    else
+    {
+        infoPanel.SetActive(false);
+    }
+
+    SetSlovak();
+    }
+
     void OnEnable() => SetSlovak();
 
     public void Close() => infoPanel.SetActive(false);
