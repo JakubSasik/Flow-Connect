@@ -9,7 +9,6 @@ public class FlowMenu : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteKey("FlowInfoShown");
         if (highScorePanel) highScorePanel.SetActive(false);
         if (infoPanel)      infoPanel.SetActive(true);
     }

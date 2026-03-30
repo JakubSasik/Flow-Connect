@@ -6,10 +6,7 @@ public class ZenMenu : MonoBehaviour
     [Header("Panels")]
     public GameObject infoPanel;
     public GameObject highScorePanel;
-    void Start()
-    {
-    PlayerPrefs.DeleteKey("ZenInfoShown");
-    }
+    
 
     public void Easy()
     {

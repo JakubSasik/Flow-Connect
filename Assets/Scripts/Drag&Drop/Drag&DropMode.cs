@@ -9,7 +9,7 @@ public class DDMode : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteKey("DDInfoShown");
+        
         if (highScorePanel) highScorePanel.SetActive(false);
         if (infoPanel)      infoPanel.SetActive(true);
     }

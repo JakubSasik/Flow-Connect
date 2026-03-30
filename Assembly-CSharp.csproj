@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\ZenMode\Tile.cs" />
     <Compile Include="Assets\Scripts\ModeMenu.cs" />
     <Compile Include="Assets\Scripts\FlowMode\Flowinfopanelui.cs" />
+    <Compile Include="Assets\Scripts\GameStartReset.cs" />
     <Compile Include="Assets\Scripts\Drag&amp;Drop\Levelmanageru2.cs" />
     <Compile Include="Assets\Scripts\FlowMode\Timermanager.cs" />
     <Compile Include="Assets\Scripts\FlowMode\FlowHighScorestore.cs" />
